@@ -1,0 +1,56 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb-typescript/base",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "ignorePatterns": ["*.config.js", "node_modules/", "dist/"],
+  "rules": {
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "prettier/prettier": "error",
+    "no-unused-vars": "warn",
+    "no-useless-constructor": "warn",
+    "@typescript-eslint/no-useless-constructor": ["warn"],
+    "no-process-exit": "off",
+    "object-shorthand": "off",
+    "class-methods-use-this": "off",
+    "no-plusplus": "off",
+    "no-console": "warn",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+   ],
+    "max-len": ["warn", { "code": 120 }],
+    "indent": ["warn", 2, {
+      "SwitchCase": 1
+    }],
+    "@typescript-eslint/indent": ["warn", 2, {
+      "SwitchCase": 1
+    }],
+    "import/prefer-default-export": "off",
+    "no-param-reassign": ["error", {
+      "props": false
+    }]
+  }
+}

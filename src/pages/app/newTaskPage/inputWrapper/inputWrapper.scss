@@ -1,0 +1,21 @@
+.task-menu {
+    &__input-wrapper {
+        display: flex;
+    justify-content: space-between;
+    min-height: 40px;
+    align-items: center;
+    background-color: #1f204d;
+    opacity: 0.5;
+    border-radius: 5px;
+    padding: 10px;
+    }
+    &__input {
+        height: 30px;
+        font-weight: bolder;
+        background-color: #9496b5;
+        width: 84%;
+        font-size: 20px;
+    }
+    
+    
+}
